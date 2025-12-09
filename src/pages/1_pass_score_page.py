@@ -21,6 +21,6 @@ if st.button("Check Password Strength"):
     if username == "" or password == "":
         st.error("Username and password cannot be empty.")
     else:
-        score, message = password_score(username, password)
-        st.markdown(message.replace("\n", "  \n"))
+        score, total, percent, msg = password_score(username, password)
+        st.markdown(msg.replace("\n", "  \n"))
         st.markdown(f"🔐 **Final Score: {score} out of 8**")
