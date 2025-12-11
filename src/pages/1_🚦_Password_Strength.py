@@ -2,8 +2,8 @@ import streamlit as st
 from pathlib import Path
 from utils.password_score import password_score
 
-# from utils.password_score import password_score
 
+st.set_page_config(layout="centered", initial_sidebar_state="collapsed")
 
 current_dir = Path(__file__).parent.parent
 image_path = current_dir / "images" / "score.png"

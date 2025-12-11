@@ -7,6 +7,8 @@ from utils.password_generators import (
 )
 
 
+st.set_page_config(layout="centered", initial_sidebar_state="collapsed")
+
 current_dir = Path(__file__).parent.parent
 image_path = current_dir / "images" / "generator.png"
 try:
@@ -45,7 +47,9 @@ elif option == "Memorable Password":
     capitalize = st.toggle("Capitalization")
 
     generator = MemorablePasswordGenerator(num_of_words, separator, capitalize)
-
+else:
+    st.error("No valid password generator option selected.")
+    st.stop()
 
 password = generator.generate()
 st.write("Your password is:")
