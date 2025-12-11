@@ -11,26 +11,30 @@ A Python-based utility for managing and generating secure passwords. This projec
 ## Installation
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/ostans/password_tools.git
-    cd password-tools
-    ```
+
+   ```bash
+   git clone https://github.com/ostans/password_tools.git
+   cd password-tools
+   ```
 
 2. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 
 In terminal go to `src` directory and run:
+
 ```bash
  export PYTHONPATH=$PYTHONPATH:$(pwd)
- ```
+```
+
 and then you can start app with this:
+
 ```bash
-streamlit run homepage.py
-``` 
+streamlit run 🏠️_Home.py
+```
 
 ## License
 
